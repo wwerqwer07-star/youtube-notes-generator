@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YouTube Notes → A4 PDF</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header><div class="yt">▶</div><div><h1>YouTube Notes</h1><p>Video को पढ़ाई के लिए A4 PDF notes में बदलें</p></div></header>
+<div class="card">
+<label>YouTube Video Link</label>
+<input id="url" type="url" placeholder="https://www.youtube.com/watch?v=..." />
+<div class="row">
+<div><label>Language</label><select id="language"><option>Hindi</option><option>English</option><option>Hinglish</option></select></div>
+<div><label>Notes Type</label><select id="type"><option value="exam">Exam Notes</option><option value="complete">Complete Notes</option><option value="short">Short Notes</option></select></div>
+</div>
+<button id="gen">✨ Generate Notes</button>
+<div id="status"></div>
+<div id="out" class="hidden">
+<label>Generated Notes</label>
+<textarea id="notes"></textarea>
+<div class="actions"><button id="pdf">📄 Download A4 PDF</button><button id="copy" class="dark">Copy</button></div>
+</div>
+</div>
+<footer>Works on mobile & laptop • Keep your API key on the server</footer>
+</div>
+<script src="app.js"></script>
+</body></html>
